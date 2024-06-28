@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en"
+      xmlns:th="http://www.thymeleaf.org"
+      xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+
+<head th:include="fragments.html::header">
+
+    <title id="pageTitle">Blog Home</title>
+
+</head>
+
+<!-- delete post usage -->
+<script type="text/javascript" th:src="@{/resources/js/index.js}"></script>
+
+<body>
+
+<!-- Navigation -->
+<nav th:insert="fragments.html::navigation" class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+</nav>
+
+<!-- Page Content -->
+<div class="container">
+
+    <div class="row">
+
+        <!-- Blog Entries Column -->
+        <div class="col-md-8">
+            <!-- Blog Posts -->
+
+            <h1 class="my-4">
+                <span>404 - Page Not Found</span>
+            </h1>
+
+
+        </div>
+
+        <!-- Sidebar Widgets Column -->
+        <div th:insert="fragments.html::widget" class="col-md-4">
+        </div>
+
+
+    </div>
+    <!-- /.row -->
+
+</div>
+<!-- /.container -->
+
+<!-- Footer -->
+<footer th:insert="fragments.html::footer"></footer>
+
+</body>
+
+</html>

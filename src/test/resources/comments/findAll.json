@@ -1,0 +1,44 @@
+[
+  {
+    "commentId": 1,
+    "postId": 2,
+    "content": "Nice",
+    "author": "matt.walters",
+    "dtCreated": "2024-06-27 21:46:26"
+  },
+  {
+    "commentId": 2,
+    "postId": 1,
+    "content": "Awesome",
+    "author": "matt.walters",
+    "dtCreated": "2024-06-27 21:46:26"
+  },
+  {
+    "commentId": 3,
+    "postId": 1,
+    "content": "Excellent",
+    "author": "matt.walters",
+    "dtCreated": "2024-06-27 21:46:26"
+  },
+  {
+    "commentId": 4,
+    "postId": 1,
+    "content": "Wonderful",
+    "author": "matt.savok",
+    "dtCreated": "2024-06-27 21:46:26"
+  },
+  {
+    "commentId": 5,
+    "postId": 3,
+    "content": "Disgusting",
+    "author": "matt.savok",
+    "dtCreated": "2024-06-27 21:46:26"
+  },
+  {
+    "commentId": 6,
+    "postId": 3,
+    "content": "Atrocious",
+    "author": "matt.walters",
+    "dtCreated": "2024-06-27 21:46:26"
+  }
+]

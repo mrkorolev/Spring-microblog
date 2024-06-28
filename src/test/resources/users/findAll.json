@@ -1,0 +1,78 @@
+[
+  {
+    "userId": 1,
+    "username": "nikkorolev.25",
+    "password": "$2a$10$8zQqkwf4WaAwM3mS7oZl7OMc0jOxhHlSG1P8zcW3zisSrUjFNARpu",
+    "postIds": [],
+    "roles": "ADMIN, MODERATOR, REGULAR",
+    "isActive": true,
+    "dtCreated": "2024-06-20 03:39:30"
+  },
+  {
+    "userId": 2,
+    "username": "matt.walters",
+    "password": "$2a$10$qM9GKvMWVwfMQ5ELUSAroeUfedWBn2G8EwL52SkOlshrGkdYlH0xy",
+    "postIds": [
+      1,
+      2,
+      3
+    ],
+    "roles": "MODERATOR, REGULAR",
+    "isActive": true,
+    "dtCreated": "2024-06-21 03:39:30"
+  },
+  {
+    "userId": 3,
+    "username": "matt.savok",
+    "password": "$2a$10$HUsqUe5lv0oWTlOwunlbmOCXkqRrBpaofF8Yr89Y82/hZ9YcDXYVO",
+    "postIds": [],
+    "roles": "MODERATOR, REGULAR",
+    "isActive": true,
+    "dtCreated": "2024-06-22 03:39:30"
+  },
+  {
+    "userId": 4,
+    "username": "abdul.faiz",
+    "password": "$2a$10$IYzdJKtzcvxl1NvrhHWc8.my2Nc/k0Xyep505Mwb1dQXmv4YysUFW",
+    "postIds": [],
+    "roles": "MODERATOR, REGULAR",
+    "isActive": true,
+    "dtCreated": "2024-06-23 03:39:30"
+  },
+  {
+    "userId": 5,
+    "username": "siddig.abdul",
+    "password": "$2a$10$FolnEwzK5.YPFrWjnU65MOgS.8XAOgp3uLhgf2KYUgULWa/i27fsy",
+    "postIds": [],
+    "roles": "REGULAR",
+    "isActive": true,
+    "dtCreated": "2024-06-24 03:39:30"
+  },
+  {
+    "userId": 6,
+    "username": "ethan.winters",
+    "password": "$2a$10$I0RyDauzc/Dy44zBxAj8AuIdvJtyXhfjoz.EgbKT53v8FSgAkJQiG",
+    "postIds": [],
+    "roles": "REGULAR",
+    "isActive": true,
+    "dtCreated": "2024-06-25 03:39:30"
+  },
+  {
+    "userId": 7,
+    "username": "jonathan.byers",
+    "password": "$2a$10$tRyWt5dbB/PORhFgt5F8K.V6i6MgpGe/6c9lFP4eZwjMmz0IN2qzi",
+    "postIds": [],
+    "roles": "REGULAR",
+    "isActive": false,
+    "dtCreated": "2024-06-26 03:39:30"
+  },
+  {
+    "userId": 8,
+    "username": "jessica.alba",
+    "password": "$2a$10$gPIyp5wYxOwpExbNFPfsG.A2RB7QapvGg17VXomg8wdnH1U/ZhlOK",
+    "postIds": [],
+    "roles": "REGULAR",
+    "isActive": true,
+    "dtCreated": "2024-06-27 03:39:30"
+  }
+]

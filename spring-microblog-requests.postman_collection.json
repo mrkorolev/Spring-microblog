@@ -1,0 +1,475 @@
+{
+	"info": {
+		"_postman_id": "22f6bee8-5e09-43a4-989a-609697631652",
+		"name": "spring-microblog-requests",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "29984118"
+	},
+	"item": [
+		{
+			"name": "posts",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "MattWalters",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "matt.walters",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Day 125\",\n    \"content\": \"Everything is great again!\",\n    \"tags\": \"life day thoughts\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring-security/api/1.0/post",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-security",
+								"api",
+								"1.0",
+								"post"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"auth": {
+							"type": "bearer",
+							"bearer": [
+								{
+									"key": "token",
+									"value": "lKHly_bDWzWkjSlrXXg886TX3ATNpjmZ",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring-security/api/1.0/post/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-security",
+								"api",
+								"1.0",
+								"post",
+								"1"
+							]
+						},
+						"description": "Retrieves a single post by postId"
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "MattWalters",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "matt.walters",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Day 135\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring-security/api/1.0/post/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-security",
+								"api",
+								"1.0",
+								"post",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "MattWalters",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "matt.walters",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"title\": \"Day 125\",\n    \"content\": \"Everything is great again!\",\n    \"tags\": \"life day thoughts\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring-security/api/1.0/post/4",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-security",
+								"api",
+								"1.0",
+								"post",
+								"4"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				}
+			],
+			"description": "'Post' entity for the spring-microblog application."
+		},
+		{
+			"name": "comments",
+			"item": [
+				{
+					"name": "findAllForPost",
+					"protocolProfileBehavior": {
+						"disableBodyPruning": true
+					},
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "DenisKorolev",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "dk.86",
+									"type": "string"
+								}
+							]
+						},
+						"method": "GET",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"content\": \"Denis Korolev speaking, we got a PhD approval here in St. Andrews and are really looking forward to seeing you in a month!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring-security/api/1.0/comment/post/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-security",
+								"api",
+								"1.0",
+								"comment",
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findById",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "DenisKorolev",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "dk.86",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"postId\": 1,\n    \"content\": \"Denis Korolev speaking, we got a PhD approval here in St. Andrews and are really looking forward to seeing you in a month!\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring-security/api/1.0/comment/post/1",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-security",
+								"api",
+								"1.0",
+								"comment",
+								"post",
+								"1"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "DenisKorolev",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "dk.86",
+									"type": "string"
+								}
+							]
+						},
+						"method": "DELETE",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring-security/api/1.0/comment/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-security",
+								"api",
+								"1.0",
+								"comment",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "'Comment' entity for the spring-microblog application."
+		},
+		{
+			"name": "users",
+			"item": [
+				{
+					"name": "create",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "MatveySavkin",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "matt.savkin",
+									"type": "string"
+								}
+							]
+						},
+						"method": "POST",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring-security/api/1.0/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-security",
+								"api",
+								"1.0",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "delete",
+					"request": {
+						"method": "DELETE",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "findAll",
+					"request": {
+						"method": "GET",
+						"header": [],
+						"url": {
+							"raw": "localhost:8080/spring-security/api/1.0/user",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-security",
+								"api",
+								"1.0",
+								"user"
+							]
+						}
+					},
+					"response": []
+				},
+				{
+					"name": "findByUsername",
+					"request": {
+						"method": "GET",
+						"header": []
+					},
+					"response": []
+				},
+				{
+					"name": "update",
+					"request": {
+						"auth": {
+							"type": "basic",
+							"basic": [
+								{
+									"key": "password",
+									"value": "NikitaKorolev",
+									"type": "string"
+								},
+								{
+									"key": "username",
+									"value": "nikkorolev.25",
+									"type": "string"
+								}
+							]
+						},
+						"method": "PUT",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": "{\n    \"isActive\": true,\n    \"username\": \"jonathan.byers123\"\n}",
+							"options": {
+								"raw": {
+									"language": "json"
+								}
+							}
+						},
+						"url": {
+							"raw": "localhost:8080/spring-security/api/1.0/user/7",
+							"host": [
+								"localhost"
+							],
+							"port": "8080",
+							"path": [
+								"spring-security",
+								"api",
+								"1.0",
+								"user",
+								"7"
+							]
+						}
+					},
+					"response": []
+				}
+			],
+			"description": "'User' entity for the spring-microblog application."
+		}
+	]
+}

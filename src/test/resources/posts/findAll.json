@@ -1,0 +1,26 @@
+[
+  {
+    "postId": 1,
+    "title": "Day 1",
+    "content": "Everything is going great!",
+    "tags": "news life",
+    "username": "matt.walters",
+    "dtCreated": "2024-06-19 10:16:07"
+  },
+  {
+    "postId": 2,
+    "title": "Day 2",
+    "content": "Some things are not working out!",
+    "tags": "news life day ideas",
+    "username": "matt.walters",
+    "dtCreated": "2024-06-20 10:16:07"
+  },
+  {
+    "postId": 3,
+    "title": "Day 3",
+    "content": "Everything is great again!",
+    "tags": "life day thoughts",
+    "username": "matt.walters",
+    "dtCreated": "2024-06-21 10:16:07"
+  }
+]
