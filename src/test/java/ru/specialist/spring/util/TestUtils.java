@@ -14,7 +14,7 @@ import java.util.Base64;
 
 public class TestUtils {
 
-    public static final String API_URL = "http://localhost:8080/spring-security/api/1.0";
+    public static final String API_URL = "http://localhost:8080/spring-microblog/api/1.0";
 
     public static MultiValueMap<String, String> getHeaders(String login, String password) {
             String auth = login + ":" + password;
