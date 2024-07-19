@@ -21,27 +21,21 @@ import java.util.Properties;
 
 @Configuration
 @EnableTransactionManagement
-@PropertySource("classpath:db.properties")
 @EnableJpaRepositories("ru.specialist.spring.repository")   // Spring Data JPA
 public class DataConfig {
 
-    private static String URL;
-    private static String USERNAME;
-    private static String PASSWORD;
+    private final String URL;
+    private final String USERNAME;
+    private final String PASSWORD;
 
-    @Value("${jdbc.url}")
-    public void setUrl(String url) {
-        URL = url;
-    }
-
-    @Value("${jdbc.username}")
-    public void setUsername(String username) {
-        USERNAME = username;
-    }
-
-    @Value("${jdbc.password}")
-    public void setPassword(String password) {
-        PASSWORD = password;
+    @Autowired
+    public DataConfig(Environment env) {
+        this.URL = String.format("jdbc:postgresql://%s:%s/%s",
+                env.getProperty("DB_HOST", "localhost"),
+                env.getProperty("DB_PORT", "5432"),
+                env.getProperty("DB_NAME", "microblog"));
+        this.USERNAME = env.getProperty("USERNAME", "nikitakorolev");
+        this.PASSWORD = env.getProperty("PASSWORD", "NikitaKorolev");
     }
 
     @Bean

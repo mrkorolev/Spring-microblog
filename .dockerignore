@@ -1,0 +1,6 @@
+.idea/
+target/
+README.md
+spring-microblog-requests.postman_collection.json
+docker_clean.sh
+docker_startup.sh

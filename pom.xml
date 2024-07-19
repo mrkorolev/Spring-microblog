@@ -166,15 +166,5 @@
   </dependencies>
   <build>
     <finalName>spring-microblog</finalName>
-    <plugins>
-      <plugin>
-        <artifactId>maven-war-plugin</artifactId>
-        <version>3.4.0</version>
-        <configuration>
-          <!-- Your servlet container webapps path here -->
-          <outputDirectory>/Users/nikitakorolev/Developer/Java/servl-cont/tomcat/apache-tomcat-9.0.71/webapps</outputDirectory>
-        </configuration>
-      </plugin>
-    </plugins>
   </build>
 </project>

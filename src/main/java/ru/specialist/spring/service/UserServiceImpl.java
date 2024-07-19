@@ -43,7 +43,7 @@ public class UserServiceImpl implements UserService, UserDetailsService {
         this.passwordEncoder = passwordEncoder;
     }
 
-    @PreAuthorize("hasRole('ADMIN')")
+    @PreAuthorize("hasRole('REGULAR')")
     public User findByUsername(String username) {
         User user = userRepository.findByUsername(username).orElseThrow(NoSuchElementException::new);
         user.getPosts().size();

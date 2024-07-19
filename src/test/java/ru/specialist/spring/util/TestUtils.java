@@ -1,5 +1,6 @@
 package ru.specialist.spring.util;
 
+import org.springframework.beans.factory.annotation.Value;
 import org.springframework.core.io.Resource;
 import org.springframework.http.HttpHeaders;
 import org.springframework.util.FileCopyUtils;
